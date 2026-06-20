@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="it-CH" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Rosa Serramenti | Eccellenza Architetturale a Manno</title>
+    <meta name="description" content="Sistemi avanzati di serramenti, porte blindate e soluzioni solari a Manno, Ticino. Precisione Svizzera, design Italiano.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tea_green: {
+                            DEFAULT: '#ccd5ae',
+                            100: '#2d331a',
+                            200: '#5b6635',
+                            300: '#88994f',
+                            400: '#acbb7b',
+                            500: '#ccd5ae',
+                            600: '#d6debe',
+                            700: '#e1e6cf',
+                            800: '#ebeedf',
+                            900: '#f5f7ef'
+                        },
+                        beige: {
+                            DEFAULT: '#e9edc9',
+                            100: '#3d4216',
+                            200: '#79842c',
+                            300: '#b3c146',
+                            400: '#ced788',
+                            500: '#e9edc9',
+                            600: '#edf1d4',
+                            700: '#f2f4df',
+                            800: '#f6f8ea',
+                            900: '#fbfbf4'
+                        },
+                        cornsilk: {
+                            DEFAULT: '#fefae0',
+                            100: '#5d5103',
+                            200: '#baa206',
+                            300: '#f8dc27',
+                            400: '#fbeb84',
+                            500: '#fefae0',
+                            600: '#fefbe7',
+                            700: '#fefced',
+                            800: '#fffdf3',
+                            900: '#fffef9'
+                        },
+                        papaya_whip: {
+                            DEFAULT: '#faedcd',
+                            100: '#533e08',
+                            200: '#a57b10',
+                            300: '#eab227',
+                            400: '#f2d079',
+                            500: '#faedcd',
+                            600: '#fbf1d6',
+                            700: '#fcf4e0',
+                            800: '#fdf8eb',
+                            900: '#fefbf5'
+                        },
+                        light_bronze: {
+                            DEFAULT: '#B05C2E',
+                            100: '#2a1509',
+                            200: '#542912',
+                            300: '#7e3e1b',
+                            400: '#965235',
+                            500: '#B05C2E',
+                            600: '#D4956A',
+                            700: '#e0b08d',
+                            800: '#edcdb0',
+                            900: '#F8F4F0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "De Rosa Serramenti Sagl",
+      "image": "https://derosaserramenti.ch/wp-content/uploads/2023/01/logo_sagl.png",
+      "@id": "https://derosaserramenti.ch",
+      "url": "https://derosaserramenti.ch",
+      "telephone": "+41779798667",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Cantonale",
+        "addressLocality": "Manno",
+        "postalCode": "6928",
+        "addressCountry": "CH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.0315,
+        "longitude": 8.9192
+      },
+      "serves": ["Manno", "Lugano", "Ticino"],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <style>
+        .text-vertical { writing-mode: vertical-rl; }
+        .glass-panel { background: rgba(248, 244, 240, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(248, 244, 240, 0.15); }
+        .broken-grid-image { clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%); }
+        .serif-display { font-family: 'Playfair Display', serif; }
+        .hamburger-menu.active .line1 { transform: rotate(45deg) translate(10px, 10px); }
+        .hamburger-menu.active .line2 { opacity: 0; }
+        .hamburger-menu.active .line3 { transform: rotate(-45deg) translate(7px, -7px); }
+
+
+        /* === PALETTE B — GRIGIO PIETRA + RAME === */
+        :root {
+            --rame: #B05C2E;
+            --pietra: #3D3935;
+            --ardesia: #6B6560;
+            --terracotta: #D4956A;
+            --panna: #F8F4F0;
+        }
+        body { color: #3D3935; }
+        h1,h2,h3,h4,h5,h6 { color: #3D3935; }
+        /* nav stays crisp */
+        nav { border-bottom-color: rgba(61,57,53,0.08) !important; }
+        /* sections with light_bronze-900 bg get panna */
+        .bg-light_bronze-900 { background-color: #F8F4F0 !important; }
+        /* footer stays near-black using pietra-deep */
+        footer.bg-black { background-color: #2A1A14 !important; }
+        /* selection */
+        ::selection { background: #B05C2E; color: #F8F4F0; }
+        /* form focus */
+        input:focus, textarea:focus, select:focus { border-color: #B05C2E !important; }
+        /* trust section */
+        .bg-light_bronze-900.text-black { background-color: #F8F4F0 !important; }
+
+        /* === TYPOGRAPHY === */
+        body { font-family: 'DM Sans', system-ui, sans-serif; }
+        .serif-display { font-family: 'Playfair Display', Georgia, serif; }
+        h1,h2,h3 { letter-spacing: -0.01em; }
+
+        /* === MOBILE MENU === */
+        #mobileMenu { display: none; flex-direction: column; }
+        #mobileMenu.is-open { display: flex; }
+
+        /* === WAB FAB === */
+        .wa-fab { bottom: 1.25rem; right: 1.25rem; }
+        @media(min-width:768px){ .wa-fab { bottom: 2.5rem; right: 2.5rem; } }
+
+        /* === HERO TEXT SCALE === */
+        .hero-title { font-size: clamp(3rem, 12vw, 12rem); line-height: 0.85; }
+
+        /* === BROKEN GRID MOBILE FIX === */
+        @media(max-width:767px){
+          .broken-grid-image { clip-path: none !important; border-radius: 0.5rem; }
+        }
+
+        /* === FORM MOBILE === */
+        @media(max-width:640px){
+          .form-grid-2 { grid-template-columns: 1fr !important; }
+        }
+
+        /* === FOOTER LINKS WRAP === */
+        @media(max-width:640px){
+          .footer-legal-links { flex-wrap: wrap; gap: 0.75rem; justify-content: flex-start; }
+        }
+    </style>
+</head>
+<body class="bg-white overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 left-0 w-full z-[100] px-6 md:px-8 py-4 bg-white/90 backdrop-blur-md border-b border-black/5 flex justify-between items-center text-black">
+        <a href="derosaserramenti.html" class="text-xl md:text-2xl font-bold tracking-tighter uppercase">De Rosa<span class="text-light_bronze">.</span></a>
+        <div class="hidden md:flex gap-12 text-sm uppercase tracking-widest font-light">
+            <a href="soluzioni.html" class="hover:text-light_bronze transition-colors">Soluzioni</a>
+            <a href="visione.html" class="hover:text-light_bronze transition-colors">Visione</a>
+            <a href="portfolio.html" class="hover:text-light_bronze transition-colors">Portfolio</a>
+            <a href="team.html" class="hover:text-light_bronze transition-colors">Team</a>
+            <a href="contatti.html" class="hover:text-light_bronze transition-colors">Contatti</a>
+        </div>
+        <button id="mobileMenuBtn" class="md:hidden hamburger-menu space-y-2 transition-all duration-300">
+            <div class="line1 w-6 h-0.5 bg-black transition-all duration-300"></div>
+            <div class="line2 w-6 h-0.5 bg-light_bronze transition-all duration-300"></div>
+            <div class="line3 w-6 h-0.5 bg-black transition-all duration-300"></div>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="fixed top-20 left-0 w-full bg-white/95 backdrop-blur-md border-b border-black/10 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-8 flex flex-col gap-6">
+            <a href="soluzioni.html" class="text-sm uppercase tracking-widest font-light hover:text-light_bronze transition-colors">Soluzioni</a>
+            <a href="visione.html" class="text-sm uppercase tracking-widest font-light hover:text-light_bronze transition-colors">Visione</a>
+            <a href="portfolio.html" class="text-sm uppercase tracking-widest font-light hover:text-light_bronze transition-colors">Portfolio</a>
+            <a href="team.html" class="text-sm uppercase tracking-widest font-light hover:text-light_bronze transition-colors">Team</a>
+            <a href="contatti.html" class="text-sm uppercase tracking-widest font-light hover:text-light_bronze transition-colors">Contatti</a>
+            <a href="tel:+41779798667" class="text-sm uppercase tracking-widest font-light border-t border-black/10 pt-6 mt-2 hover:text-light_bronze transition-colors">☎ +41 77 979 8667</a>
+        </div>
+    </div>
+
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('is-open');
+            mobileMenuBtn.classList.toggle('active', isOpen);
+        });
+        
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('is-open');
+                mobileMenuBtn.classList.remove('active');
+            });
+        });
+    </script>
+
+
+    <!-- HERO SECTION: THE ARCHITECTURAL STATEMENT -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 text-white">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black z-10"></div>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80" 
+                 class="w-full h-full object-cover scale-110 animate-pulse-slow" alt="Serramenti di Design Ticino">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-20 grid grid-cols-12">
+            <div class="col-span-12 md:col-span-1 hidden md:flex items-center">
+                <span class="text-vertical uppercase tracking-[1em] text-xs text-gray-500 origin-center rotate-180">Swiss Precision — Est. 2023</span>
+            </div>
+            <div class="col-span-12 md:col-span-11">
+                <h1 class="serif-display hero-title leading-[0.85] mb-8">
+                    Luce <br> 
+                    <span class="text-transparent border-t border-b border-white/20 px-4 inline-block italic">Oltre</span> <br>
+                    Il Limite
+                </h1>
+                <div class="max-w-xl glass-panel p-8 mt-[-2rem] ml-auto md:mr-20">
+                    <p class="text-lg font-light text-gray-300 leading-relaxed mb-6">
+                        Re-immaginiamo i confini del tuo spazio. A Manno, De Rosa Sagl fonde l'ingegneria svizzera con l'estetica contemporanea per serramenti che non sono solo infissi, ma cornici per la tua vita.
+                    </p>
+                    <a href="contatti.html" class="inline-block border border-light_bronze px-10 py-4 uppercase text-xs tracking-widest hover:bg-light_bronze transition-all duration-500">
+                        Configura il tuo progetto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTIONS PREVIEW -->
+    <section id="soluzioni" class="py-24 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="serif-display text-5xl font-bold tracking-tighter mb-4">Le Nostre Soluzioni</h2>
+            <p class="text-gray-500 uppercase tracking-widest text-xs font-light">Sistemi ad alta efficienza termica e sicurezza avanzata</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group border border-black/5 p-8 rounded-lg hover:shadow-xl transition-all bg-light_bronze-900/10">
+                <span class="text-light_bronze font-bold text-3xl serif-display italic">01</span>
+                <h3 class="text-2xl font-bold mt-4 mb-4">Serramenti</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-6">Infissi in Alluminio e PVC certificati per l'isolamento termico e acustico.</p>
+                <a href="soluzioni.html" class="text-xs uppercase tracking-wider font-bold text-light_bronze hover:underline">Scopri di più &rarr;</a>
+            </div>
+            <div class="group border border-black/5 p-8 rounded-lg hover:shadow-xl transition-all bg-light_bronze-900/10">
+                <span class="text-light_bronze font-bold text-3xl serif-display italic">02</span>
+                <h3 class="text-2xl font-bold mt-4 mb-4">Porte Blindate</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-6">Sistemi di sicurezza avanzati e porte blindate classe 4 antieffrazione.</p>
+                <a href="soluzioni.html" class="text-xs uppercase tracking-wider font-bold text-light_bronze hover:underline">Scopri di più &rarr;</a>
+            </div>
+            <div class="group border border-black/5 p-8 rounded-lg hover:shadow-xl transition-all bg-light_bronze-900/10">
+                <span class="text-light_bronze font-bold text-3xl serif-display italic">03</span>
+                <h3 class="text-2xl font-bold mt-4 mb-4">Sistemi Oscuranti</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-6">Tende da sole e frangisole motorizzati integrati per il controllo solare.</p>
+                <a href="soluzioni.html" class="text-xs uppercase tracking-wider font-bold text-light_bronze hover:underline">Scopri di più &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST & AUTHORITY SECTION -->
+    <section class="bg-light_bronze-900 text-black py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-12">
+                <div>
+                    <h3 class="text-xs uppercase tracking-[0.3em] font-bold mb-6 text-light_bronze">Sopralluogo Gratuito</h3>
+                    <p class="text-xl serif-display italic">Analizziamo la trasmittanza termica dei tuoi vecchi infissi senza impegno.</p>
+                </div>
+                <div>
+                    <h3 class="text-xs uppercase tracking-[0.3em] font-bold mb-6 text-light_bronze">Posatori Interni</h3>
+                    <p class="text-xl serif-display italic">Nessun subappalto. Solo tecnici specializzati formati secondo gli standard De Rosa.</p>
+                </div>
+                <div>
+                    <h3 class="text-xs uppercase tracking-[0.3em] font-bold mb-6 text-light_bronze">Incentivi Cantone</h3>
+                    <p class="text-xl serif-display italic">Ti guidiamo nelle pratiche per il recupero fiscale previsto dalle normative vigenti.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="visione.html" class="inline-block border border-black px-8 py-3 uppercase text-xs tracking-widest hover:bg-black hover:text-white transition-all">
+                    La nostra filosofia
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section id="contatti" class="py-32 bg-black text-white text-center relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="serif-display text-5xl md:text-7xl mb-8">Pronto a trasformare il tuo spazio?</h2>
+            <p class="text-gray-400 max-w-xl mx-auto mb-12 uppercase tracking-widest text-xs font-light">Contattaci per richiedere un sopralluogo gratuito o configurare il tuo preventivo personalizzato.</p>
+            <a href="contatti.html" class="inline-block bg-white text-black font-bold px-12 py-5 uppercase text-xs tracking-[0.3em] hover:bg-light_bronze hover:text-white transition-all">
+                Contattaci Ora
+            </a>
+        </div>
+    </section>
+
+    <!-- WHATSAPP FAB -->
+    <a href="https://wa.me/4178123456" target="_blank" 
+       class="wa-fab fixed z-[100] bg-green-500 w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+       <svg class="w-8 h-8 fill-white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.893-11.893 11.893-2.011 0-3.99-.504-5.747-1.464l-6.246 1.639zm6.05-3.328c1.558.924 3.4 1.411 5.283 1.412 5.454 0 9.893-4.438 9.893-9.893 0-2.641-1.029-5.122-2.898-6.994-1.868-1.87-4.35-2.901-6.995-2.901-5.454 0-9.894 4.441-9.894 9.896 0 1.939.569 3.827 1.644 5.432l-1.084 3.963 4.064-1.065z"/></svg>
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white">
+        <div class="border-t border-white/10 py-16">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                    <!-- Company Info -->
+                    <div>
+                        <h3 class="text-xl font-bold tracking-tighter uppercase mb-6">De Rosa<span class="text-light_bronze">.</span></h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">Sistemi avanzati di serramenti, porte blindate e soluzioni solari con eccellenza architettonica.</p>
+                        <div class="flex gap-4 mt-6">
+                            <a href="https://facebook.com" target="_blank" class="w-8 h-8 flex items-center justify-center border border-light_bronze rounded-full hover:bg-light_bronze transition-all" title="Facebook">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="w-8 h-8 flex items-center justify-center border border-light_bronze rounded-full hover:bg-light_bronze transition-all" title="Instagram">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.117.6c-.588.147-1.079.358-1.623.923-.566.544-.779 1.035-.94 1.623-.27.789-.47 1.659-.53 3.819C1.5 8.557 1.5 9.073 1.5 12s0 3.443.072 4.947c.062 2.15.261 3.042.573 3.831.291.758.703 1.254 1.123 1.32 1.922.29 3.622.29 4.147.288 2.654-.05 3.737-.322 5.556-.948 1.232-.436 2.835-1.078 4.07-2.313.737-.737 1.922-2.299 2.428-4.282.486-1.902.721-5.319.721-6.44 0-1.12-.235-4.538-.721-6.44-.506-1.983-1.691-3.545-2.428-4.282-1.235-1.235-2.838-1.877-4.07-2.313-1.819-.626-2.902-.898-5.556-.948-.525.002-2.225-.002-4.147.288z"/></svg>
+                            </a>
+                            <a href="https://wa.me/4178123456" target="_blank" class="w-8 h-8 flex items-center justify-center border border-light_bronze rounded-full hover:bg-light_bronze transition-all" title="WhatsApp">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.893-11.893 11.893-2.011 0-3.99-.504-5.747-1.464l-6.246 1.639zm6.05-3.328c1.558.924 3.4 1.411 5.283 1.412 5.454 0 9.893-4.438 9.893-9.893 0-2.641-1.029-5.122-2.898-6.994-1.868-1.87-4.35-2.901-6.995-2.901-5.454 0-9.894 4.441-9.894 9.896 0 1.939.569 3.827 1.644 5.432l-1.084 3.963 4.064-1.065z"/></svg>
+                            </a>
+                            <a href="mailto:info@derosaserramenti.ch" class="w-8 h-8 flex items-center justify-center border border-light_bronze rounded-full hover:bg-light_bronze transition-all" title="Email">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none"/><polyline points="22 6 12 13 2 6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-sm uppercase tracking-widest font-bold mb-6 text-light_bronze">Navigazione</h4>
+                        <ul class="space-y-3 text-sm text-gray-400">
+                            <li><a href="derosaserramenti.html" class="hover:text-light_bronze transition-colors">Home</a></li>
+                            <li><a href="soluzioni.html" class="hover:text-light_bronze transition-colors">Soluzioni</a></li>
+                            <li><a href="portfolio.html" class="hover:text-light_bronze transition-colors">Portfolio</a></li>
+                            <li><a href="visione.html" class="hover:text-light_bronze transition-colors">Visione</a></li>
+                            <li><a href="team.html" class="hover:text-light_bronze transition-colors">Team</a></li>
+                            <li><a href="contatti.html" class="hover:text-light_bronze transition-colors">Contatti</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div>
+                        <h4 class="text-sm uppercase tracking-widest font-bold mb-6 text-light_bronze">Contatti</h4>
+                        <ul class="space-y-4 text-sm text-gray-400">
+                            <li class="flex items-start gap-3">
+                                <span class="text-light_bronze mt-1">📍</span>
+                                <span>Via Cantonale<br>6928 Manno, Ticino<br>Svizzera</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-light_bronze">📞</span>
+                                <a href="tel:+41779798667" class="hover:text-light_bronze transition-colors">+41 77 979 8667</a>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-light_bronze">✉️</span>
+                                <a href="mailto:info@derosaserramenti.ch" class="hover:text-light_bronze transition-colors">info@derosaserramenti.ch</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Opening Hours -->
+                    <div>
+                        <h4 class="text-sm uppercase tracking-widest font-bold mb-6 text-light_bronze">Orari</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li class="flex justify-between">
+                                <span>Lunedì - Venerdì:</span>
+                                <span class="text-white">08:00 - 18:00</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Sabato:</span>
+                                <span class="text-white">09:00 - 13:00</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Domenica:</span>
+                                <span class="text-light_bronze">Chiuso</span>
+                            </li>
+                            <li class="mt-4 pt-4 border-t border-white/10 text-xs text-gray-500">
+                                <p>Sopralluogo gratuito su appuntamento</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="border-t border-white/10 pt-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                        <p class="text-[10px] uppercase tracking-[0.5em] text-gray-500">
+                            &copy; 2023-2026 De Rosa Serramenti Sagl — Manno, Svizzera. All Rights Reserved.
+                        </p>
+                        <div class="footer-legal-links flex justify-end gap-6 text-[10px] uppercase tracking-widest text-gray-500">
+                            <a href="#" class="hover:text-light_bronze transition-colors">Privacy Policy</a>
+                            <a href="#" class="hover:text-light_bronze transition-colors">Termini di Servizio</a>
+                            <a href="#" class="hover:text-light_bronze transition-colors">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
