@@ -216,7 +216,12 @@
             
             <!-- Project 1: Lugano -->
             <div class="col-span-1 md:col-span-2 group relative overflow-hidden aspect-video rounded-lg">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80" 
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=400" 
+                     srcset="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=400 400w,
+                             https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=700 700w,
+                             https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200 1200w"
+                     sizes="(max-width: 640px) 90vw, (max-width: 1024px) 90vw, 1000px"
+                     loading="lazy"
                      class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" alt="Villa Minimalista Lugano">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
                 <div class="absolute bottom-4 sm:bottom-6 md:bottom-8 left-4 sm:left-6 md:left-8 text-white">
@@ -227,7 +232,12 @@
 
             <!-- Project 2: Manno -->
             <div class="col-span-1 group relative overflow-hidden aspect-video rounded-lg">
-                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80" 
+                <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=400" 
+                     srcset="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=400 400w,
+                             https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=600 600w,
+                             https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=1000 1000w"
+                     sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 500px"
+                     loading="lazy"
                      class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" alt="Residenza Manno">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
                 <div class="absolute bottom-4 sm:bottom-6 md:bottom-8 left-4 sm:left-6 md:left-8 text-white">
@@ -238,7 +248,12 @@
 
             <!-- Project 3: Locarno -->
             <div class="col-span-1 group relative overflow-hidden aspect-video rounded-lg">
-                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80" 
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=400" 
+                     srcset="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=400 400w,
+                             https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600 600w,
+                             https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1000 1000w"
+                     sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 500px"
+                     loading="lazy"
                      class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" alt="Attico Locarno">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
                 <div class="absolute bottom-4 sm:bottom-6 md:bottom-8 left-4 sm:left-6 md:left-8 text-white">
@@ -249,7 +264,12 @@
 
             <!-- Project 4: Bellinzona -->
             <div class="col-span-1 md:col-span-2 group relative overflow-hidden aspect-video rounded-lg">
-                <img src="https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&q=80" 
+                <img src="https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&q=80&w=400" 
+                     srcset="https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&q=80&w=400 400w,
+                             https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&q=80&w=700 700w,
+                             https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&q=80&w=1200 1200w"
+                     sizes="(max-width: 640px) 90vw, (max-width: 1024px) 90vw, 1000px"
+                     loading="lazy"
                      class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" alt="Villa Bellinzona">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
                 <div class="absolute bottom-4 sm:bottom-6 md:bottom-8 left-4 sm:left-6 md:left-8 text-white">
@@ -349,11 +369,14 @@
 
                 <!-- Footer Bottom -->
                 <div class="border-t border-white/10 pt-8">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                        <p class="text-[10px] uppercase tracking-[0.5em] text-gray-500">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 text-center md:text-left md:items-center">
+                        <p class="text-[10px] uppercase tracking-[0.5em] text-gray-500 order-2 md:order-1">
                             &copy; 2023-2026 De Rosa Serramenti Sagl — Manno, Svizzera. All Rights Reserved.
                         </p>
-                        <div class="footer-legal-links flex justify-end gap-6 text-[10px] uppercase tracking-widest text-gray-500">
+                        <div class="order-1 md:order-2 flex justify-center">
+                            <p class="text-[9px] uppercase tracking-widest text-gray-600">Powered by <a href="https://www.sititicino.ch" target="_blank" class="text-light_bronze hover:text-light_bronze/80 transition-colors font-semibold">Connect &amp; Create</a></p>
+                        </div>
+                        <div class="footer-legal-links flex justify-center md:justify-end gap-6 text-[10px] uppercase tracking-widest text-gray-500 order-3">
                             <a href="#" class="hover:text-light_bronze transition-colors">Privacy Policy</a>
                             <a href="#" class="hover:text-light_bronze transition-colors">Termini di Servizio</a>
                             <a href="#" class="hover:text-light_bronze transition-colors">Cookie Policy</a>

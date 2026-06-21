@@ -246,7 +246,12 @@
     <section class="relative min-h-screen flex items-center justify-center pt-20 text-white">
         <div class="absolute inset-0 z-0 overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black z-10"></div>
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80" 
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=400" 
+                 srcset="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=400 400w,
+                         https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800 800w,
+                         https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1600 1600w"
+                 sizes="100vw"
+                 loading="eager"
                  class="w-full h-full object-cover scale-110 animate-pulse-slow" alt="Serramenti di Design Ticino">
         </div>
 
@@ -424,11 +429,14 @@
 
                 <!-- Footer Bottom -->
                 <div class="border-t border-white/10 pt-8">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                        <p class="text-[10px] uppercase tracking-[0.5em] text-gray-500">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 text-center md:text-left md:items-center">
+                        <p class="text-[10px] uppercase tracking-[0.5em] text-gray-500 order-2 md:order-1">
                             &copy; 2023-2026 De Rosa Serramenti Sagl — Manno, Svizzera. All Rights Reserved.
                         </p>
-                        <div class="footer-legal-links flex justify-end gap-6 text-[10px] uppercase tracking-widest text-gray-500">
+                        <div class="order-1 md:order-2 flex justify-center">
+                            <p class="text-[9px] uppercase tracking-widest text-gray-600">Powered by <a href="https://www.sititicino.ch" target="_blank" class="text-light_bronze hover:text-light_bronze/80 transition-colors font-semibold">Connect &amp; Create</a></p>
+                        </div>
+                        <div class="footer-legal-links flex justify-center md:justify-end gap-6 text-[10px] uppercase tracking-widest text-gray-500 order-3">
                             <a href="#" class="hover:text-light_bronze transition-colors">Privacy Policy</a>
                             <a href="#" class="hover:text-light_bronze transition-colors">Termini di Servizio</a>
                             <a href="#" class="hover:text-light_bronze transition-colors">Cookie Policy</a>

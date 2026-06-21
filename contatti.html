@@ -421,16 +421,16 @@
                 </div>
             </div>
 
-            <div class="col-span-12 md:col-span-6 glass-panel p-10 relative">
-                <h3 class="text-xl font-bold mb-2">Richiesta Consulenza</h3>
-                <p class="text-gray-400 text-sm mb-8">Compila il modulo sottostante. Il nostro team a Manno ti contatterà entro 24 ore per concordare un appuntamento.</p>
-                <form action="#" method="POST" class="space-y-6">
-                    <div class="form-grid-2 grid grid-cols-2 gap-6">
-                        <input type="text" placeholder="Nome" class="bg-transparent border-b border-white/20 py-4 focus:border-light_bronze outline-none transition-all text-white placeholder-gray-500">
-                        <input type="email" placeholder="Email" class="bg-transparent border-b border-white/20 py-4 focus:border-light_bronze outline-none transition-all text-white placeholder-gray-500">
+            <div class="col-span-12 md:col-span-6 glass-panel p-6 sm:p-8 md:p-10 relative">
+                <h3 class="text-lg sm:text-xl font-bold mb-2">Richiesta Consulenza</h3>
+                <p class="text-gray-400 text-xs sm:text-sm mb-6 sm:mb-8">Compila il modulo sottostante. Il nostro team a Manno ti contatterà entro 24 ore per concordare un appuntamento.</p>
+                <form action="mailto:info@derosaserramenti.ch" method="GET" enctype="text/plain" class="space-y-4 sm:space-y-6">
+                    <div class="form-grid-2 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-6">
+                        <input type="text" name="nome" placeholder="Nome" required class="bg-transparent border-b border-white/20 py-3 sm:py-4 focus:border-light_bronze outline-none transition-all text-white placeholder-gray-500 text-sm">
+                        <input type="email" name="email" placeholder="Email" required class="bg-transparent border-b border-white/20 py-3 sm:py-4 focus:border-light_bronze outline-none transition-all text-white placeholder-gray-500 text-sm">
                     </div>
-                    <input type="tel" placeholder="Telefono" class="w-full bg-transparent border-b border-white/20 py-4 focus:border-light_bronze outline-none transition-all text-white placeholder-gray-500">
-                    <select class="w-full bg-transparent border-b border-white/20 py-4 focus:border-light_bronze outline-none transition-all appearance-none text-white">
+                    <input type="tel" name="telefono" placeholder="Telefono" class="w-full bg-transparent border-b border-white/20 py-3 sm:py-4 focus:border-light_bronze outline-none transition-all text-white placeholder-gray-500 text-sm">
+                    <select name="interessato" class="w-full bg-transparent border-b border-white/20 py-3 sm:py-4 focus:border-light_bronze outline-none transition-all appearance-none text-white text-sm">
                         <option class="bg-black text-white">Interessato a...</option>
                         <option class="bg-black text-white">Serramenti & Infissi</option>
                         <option class="bg-black text-white">Porte Blindate</option>
@@ -438,17 +438,17 @@
                         <option class="bg-black text-white">Consulenza Energetica Minergie</option>
                         <option class="bg-black text-white">Ristrutturazione Completa</option>
                     </select>
-                    <textarea placeholder="Descrivi il tuo progetto e la tua location nel Ticino" rows="4" class="w-full bg-transparent border-b border-white/20 py-4 focus:border-light_bronze outline-none transition-all text-white placeholder-gray-500"></textarea>
+                    <textarea name="progetto" placeholder="Descrivi il tuo progetto e la tua location nel Ticino" rows="3" class="w-full bg-transparent border-b border-white/20 py-3 sm:py-4 focus:border-light_bronze outline-none transition-all text-white placeholder-gray-500 text-sm resize-none"></textarea>
                     
                     <!-- nLPD Compliance Checkbox -->
-                    <div class="flex items-start gap-3 py-4">
-                        <input type="checkbox" id="privacy" required class="mt-1 accent-light_bronze">
-                        <label for="privacy" class="text-[10px] text-gray-500 leading-tight uppercase tracking-widest">
+                    <div class="flex items-start gap-2 sm:gap-3 py-3 sm:py-4">
+                        <input type="checkbox" id="privacy" name="privacy" required class="mt-1 accent-light_bronze flex-shrink-0">
+                        <label for="privacy" class="text-[9px] sm:text-[10px] text-gray-500 leading-tight uppercase tracking-widest">
                             Acconsento al trattamento dei dati personali secondo la nuova Legge Protezione Dati (nLPD) Svizzera. I tuoi dati saranno utilizzati esclusivamente per la consulenza su serramenti, porte blindate e protezioni solari nel Canton Ticino.
                         </label>
                     </div>
 
-                    <button type="submit" class="w-full bg-white text-black font-bold py-5 uppercase text-xs tracking-[0.3em] hover:bg-light_bronze hover:text-white transition-all">
+                    <button type="submit" class="w-full bg-white text-black font-bold py-4 sm:py-5 uppercase text-xs tracking-[0.2em] sm:tracking-[0.3em] hover:bg-light_bronze hover:text-white transition-all text-xs sm:text-sm">
                         Richiedi Consulenza Gratuita
                     </button>
                 </form>
@@ -587,11 +587,14 @@
 
                 <!-- Footer Bottom -->
                 <div class="border-t border-white/10 pt-8">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                        <p class="text-[10px] uppercase tracking-[0.5em] text-gray-500">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 text-center md:text-left md:items-center">
+                        <p class="text-[10px] uppercase tracking-[0.5em] text-gray-500 order-2 md:order-1">
                             &copy; 2023-2026 De Rosa Serramenti Sagl — Manno, Svizzera. All Rights Reserved.
                         </p>
-                        <div class="footer-legal-links flex justify-end gap-6 text-[10px] uppercase tracking-widest text-gray-500">
+                        <div class="order-1 md:order-2 flex justify-center">
+                            <p class="text-[9px] uppercase tracking-widest text-gray-600">Powered by <a href="https://www.sititicino.ch" target="_blank" class="text-light_bronze hover:text-light_bronze/80 transition-colors font-semibold">Connect &amp; Create</a></p>
+                        </div>
+                        <div class="footer-legal-links flex justify-center md:justify-end gap-6 text-[10px] uppercase tracking-widest text-gray-500 order-3">
                             <a href="#" class="hover:text-light_bronze transition-colors">Privacy Policy</a>
                             <a href="#" class="hover:text-light_bronze transition-colors">Termini di Servizio</a>
                             <a href="#" class="hover:text-light_bronze transition-colors">Cookie Policy</a>
