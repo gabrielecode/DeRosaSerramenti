@@ -130,6 +130,13 @@
           .broken-grid-image { clip-path: none !important; border-radius: 0.5rem; }
         }
 
+        /* === IMAGE OPTIMIZATION === */
+        img { display: block; max-width: 100%; height: auto; }
+        .broken-grid-image img { will-change: filter; }
+        @media(max-width:640px){
+          .group-hover\:grayscale-0:hover { grayscale: 0 !important; }
+        }
+
         /* === FORM MOBILE === */
         @media(max-width:640px){
           .form-grid-2 { grid-template-columns: 1fr !important; }
@@ -218,7 +225,12 @@
             <!-- Service 1: Serramenti -->
             <div class="col-span-1 group">
                 <div class="relative overflow-hidden broken-grid-image h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px]">
-                    <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80" 
+                    <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=400" 
+                         srcset="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=400 400w,
+                                 https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=600 600w,
+                                 https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=900 900w"
+                         sizes="(max-width: 640px) 90vw, (max-width: 768px) 90vw, 45vw"
+                         loading="lazy" 
                          class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Serramenti Manno">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all"></div>
                 </div>
@@ -245,20 +257,30 @@
             </div>
             <div class="col-span-1 group">
                 <div class="relative overflow-hidden broken-grid-image h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] scale-x-[-1]">
-                    <img src="https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&q=80" 
+                    <img src="https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&q=80&w=400" 
+                         srcset="https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&q=80&w=400 400w,
+                                 https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&q=80&w=600 600w,
+                                 https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&q=80&w=900 900w"
+                         sizes="(max-width: 640px) 90vw, (max-width: 768px) 90vw, 45vw"
+                         loading="lazy" 
                          class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-x-[-1]" alt="Porte Blindate Ticino">
                 </div>
             </div>
 
             <!-- Service 3: Sistemi Oscuranti -->
-            <div class="col-span-12 md:col-span-7 group">
-                <div class="relative overflow-hidden broken-grid-image h-[280px] md:h-[500px]">
-                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80" 
+            <div class="col-span-1 md:col-span-1 lg:col-span-7 group">
+                <div class="relative overflow-hidden broken-grid-image h-[280px] sm:h-[350px] md:h-[500px]">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=400" 
+                         srcset="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=400 400w,
+                                 https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=700 700w,
+                                 https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1000 1000w"
+                         sizes="(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 55vw"
+                         loading="lazy" 
                          class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Sistemi Oscuranti Ticino">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-all"></div>
                 </div>
             </div>
-            <div class="col-span-12 md:col-span-5 md:pl-12 py-6 md:py-0">
+            <div class="col-span-1 md:col-span-1 lg:col-span-5 lg:pl-12 py-6 md:py-0">
                 <span class="text-light_bronze font-bold text-3xl md:text-5xl opacity-20 serif-display italic">03</span>
                 <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6 tracking-tighter leading-tight">Sistemi Oscuranti & Tende da Sole</h2>
                 <p class="text-gray-600 md:text-gray-400 text-sm md:text-base mb-6 md:mb-8 leading-relaxed md:leading-loose">Controllo solare dinamico e motorizzato. Protezione dai raggi UV ed efficienza climatica estiva con design integrato e sensori vento/sole.</p>
